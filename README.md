@@ -32,20 +32,18 @@ The model is based on the following paper:
 
 ## Model
 
-The credit rating \( X_n^t \) of company \( n \) at time \( t \) is modeled as a stochastic mixture:
+The credit rating $X_n^t$ of company $n$ at time $t$ is modeled as a stochastic mixture:
 
-\[
+$$
 X_n^t = \delta_n^t \xi_n^t + (1 - \delta_n^t) \eta_n^t
-\]
+$$
 
 Where:
 
-- \( \xi_n^t \): Idiosyncratic (firm-specific) component  
-- \( \eta_n^t \): Systematic (macroeconomic) component  
-- \( \delta_n^t \): Bernoulli mixing variable  
-- \( q_{m,s} \): Coupling probability for rating class \( m \) and sector \( s \)
-
----
+- $\xi_n^t$: Idiosyncratic (firm-specific) component  
+- $\eta_n^t$: Systematic (macroeconomic) component  
+- $\delta_n^t$: Bernoulli mixing variable  
+- $q_{m,s}$: Coupling probability for rating class $m$ and sector $s$
 
 ## Optimization Methods
 
