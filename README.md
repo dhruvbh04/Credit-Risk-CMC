@@ -2,11 +2,9 @@
 
 This repository contains the implementation and analysis of a **Coupled Markov Chain (CMC)** model for corporate credit rating transitions. The project replicates and extends the framework proposed by **Wozabal and Hochreiter (2012)** and applies it to a modern dataset to study the interaction between firm-level idiosyncratic risks and systematic macroeconomic effects.
 
-This project was conducted at **BITS Pilani, Goa Campus**, under the guidance of **Prof. Mayank Goel**.
-
 ---
 
-## 📄 Project Overview
+## Overview
 
 Traditional credit risk models often assume independent rating transitions across firms. However, empirical evidence shows **default clustering during economic downturns**, indicating the presence of strong systemic effects.
 
@@ -22,7 +20,7 @@ The main objective is to estimate:
 
 ---
 
-## 📚 Theoretical Background
+## Theoretical Background
 
 The model is based on the following paper:
 
@@ -32,7 +30,7 @@ The model is based on the following paper:
 
 ---
 
-## 🧠 The Model
+## Model
 
 The credit rating \( X_n^t \) of company \( n \) at time \( t \) is modeled as a stochastic mixture:
 
@@ -49,7 +47,7 @@ Where:
 
 ---
 
-## ⚙️ Optimization Methods
+## Optimization Methods
 
 The likelihood function of the CMC model is **non-convex**. Two optimization techniques are used:
 
@@ -63,17 +61,7 @@ The likelihood function of the CMC model is **non-convex**. Two optimization tec
 
 ---
 
-## 📂 Repository Structure
-
-├── ASPProjectDhruvPrabhsimar.ipynb # Main notebook (Preprocessing, MLE, PSO/SLSQP)
-├── ProjectReportDhruvPrabhsimar.pdf # Detailed report and results
-├── 1-s2.0-S0165188911001850-main.pdf # Reference paper (Wozabal & Hochreiter, 2012)
-└── README.md # Project documentation
-
-
----
-
-## 📊 Data Availability
+## Data Availability
 
 - **Dataset:** Corporate Credit Rating with Financial Ratios  
 - **Source:** Kaggle  
@@ -84,14 +72,3 @@ The likelihood function of the CMC model is **non-convex**. Two optimization tec
   - **1 default state**
 - This matches the methodology of the reference paper.
 
----
-
-## 🚀 Installation & Usage
-
-### Prerequisites
-
-- Python 3  
-- Required libraries:
-
-```bash
-pip install numpy pandas scipy pyswarm
